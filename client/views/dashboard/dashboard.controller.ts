@@ -1,7 +1,7 @@
 class DashboardController {
 
 
-  static $inject = [ '$log', '$state',  '$modal', '$scope' , '$reactive' ];
+  static $inject = [ '$log', '$state',  '$modal', '$scope' , '$reactive', 'currentUser' ];
 
   public  myModal: any;
 
@@ -14,11 +14,12 @@ class DashboardController {
   private sortColumns: any = {};
 
 
-  constructor( private $log: angular.ILogService, private $state: angular.ui.IStateService, private $modal: any, private $scope: any, $reactive: any ) {
+  constructor( private $log: angular.ILogService, private $state: angular.ui.IStateService, private $modal: any, private $scope: any, private $reactive: any, private currentUser: any ) {
 
 
     $reactive( this ).attach( $scope );
 
+    console.log( 'currentUser', currentUser );
 
     this.autorun( () => {
 
@@ -96,6 +97,15 @@ class DashboardController {
     return this.$state.current.name === state ? 'active' : '';
   }
 
+  login(): void {
+    Meteor.loginWithPassword( 'John', 'Welcome123', ( error ) => {
+      if ( error ) {
+        console.error( error );
+      }
+      this.$state.go( 'dashboard.open')
+      console.log('logged in');
+    });
+  }
 
 
 }

@@ -21,7 +21,12 @@ function routerConfig( $stateProvider: angular.ui.IStateProvider, $urlRouterProv
           , controller:   'DashboardController'
           , controllerAs: 'vm'
         }
+      }
+    , resolve: {
 
+        currentUser: [ '$auth', ( $auth ) => {
+          return $auth.requireUser();
+        } ]
       }
     } )
     .state('dashboard.open',
@@ -34,6 +39,21 @@ function routerConfig( $stateProvider: angular.ui.IStateProvider, $urlRouterProv
           templateUrl: 'client/views/dashboard/open/open.html'
           // , controller:   'GetStartedController'
           // , controllerAs: 'vm'
+        }
+      }
+
+    })
+
+    .state('login',
+    {
+      url: '/login'
+      , views:
+      {
+        'app':
+        {
+          templateUrl: 'client/views/auth/login.html'
+        , controller:   'DashboardController'
+        , controllerAs: 'vm'
         }
       }
     })
