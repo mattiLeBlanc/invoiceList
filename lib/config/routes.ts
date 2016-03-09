@@ -56,6 +56,9 @@ function routerConfig( $stateProvider: angular.ui.IStateProvider, $urlRouterProv
         , controllerAs: 'vm'
         }
       }
+     , resolve: {
+       currentUser: () => {return null };
+     }
     })
 
   ;
