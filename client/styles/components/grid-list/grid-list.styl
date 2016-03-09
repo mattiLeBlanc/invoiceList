@@ -1,0 +1,22 @@
+@import "../../imports.styl"
+
+.pp-grid-list
+  border-radius               10px
+  border                      1px solid $color-charcoal-9
+  margin-top                  30px
+
+
+  dt
+    font-weight               $font-weight-regular
+    +retina()
+      font-weight               $font-weight-light
+
+    color                     $color-charcoal-2
+    border-bottom             1px solid $color-charcoal-9
+    padding                   25px 50px
+
+  dd
+    padding                   25px 50px
+    border-bottom             1px solid $color-charcoal-9
+    &:last-child
+      border-bottom           none

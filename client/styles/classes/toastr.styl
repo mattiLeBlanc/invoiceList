@@ -1,0 +1,39 @@
+@import "../imports.styl"
+
+#toast-container
+
+  +at(1)
+
+    left                    0
+    right                   0
+    width                   100%
+    max-width               100%
+    min-width               0
+    border-radius           0
+    bottom                  0
+    padding                 12px 15px
+
+  .toast
+    margin                  0
+    +at(1)
+      width                 100%
+
+
+    &.pp-toast-success
+      background-color      #323232
+      box-shadow            none
+      padding               15px
+      font-size             14px
+
+    .toast-close-button
+      top                   initial
+      right                 initial
+      font-size             inherit
+      font-weight           inherit
+      text-shadow           none
+      opacity               1
+
+      &:hover
+        color               inherit
+        opacity             .8
+

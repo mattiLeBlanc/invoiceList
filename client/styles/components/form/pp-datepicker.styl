@@ -1,0 +1,70 @@
+@import "../../imports.styl"
+
+// mixins
+
+  arrow-icon()
+    .pp-datepicker-icon
+
+      background-image    url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMC8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9UUi8yMDAxL1JFQy1TVkctMjAwMTA5MDQvRFREL3N2ZzEwLmR0ZCI+PHN2ZyB2ZXJzaW9uPSIxLjAiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjkuNjAycHgiIGhlaWdodD0iNS45MjJweCIgdmlld0JveD0iMCAwIDkuNjAyIDUuOTIyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA5LjYwMiA1LjkyMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PHBhdGggZmlsbD0iI0IyQjJCMiIgZD0iTTguNDgsMGwtMy42OCwzLjY4TDEuMTIxLDBMMCwxLjEyMWw0LjgwMSw0LjgwMWw0LjgwMS00LjgwMUw4LjQ4LDB6IE04LjQ4LDAiLz48L2c+PC9zdmc+")
+      background-size     18px
+      vertical-align      initial
+      display             inline-block
+      background-repeat   no-repeat
+      width               18px
+      height              12px
+      &.left
+        transform         rotate(90deg)
+      &.right
+        transform         rotate(-90deg)
+
+
+
+// selectors
+
+.pp-datepicker
+  // position                      relative
+
+  .datepicker.dropdown-menu
+    border-radius                 5px
+    width                         320px
+
+    button
+      min-width                   initial
+      border                      none
+      color                       initial
+      padding                     0
+      height                      42px
+
+    table
+      thead
+        th
+          button.pull-left
+            margin-left           10px
+            arrow-icon()
+          button.pull-right
+            margin-right          10px
+            arrow-icon()
+
+          button
+            // &:hover
+            background-color      initial
+            border                none
+            strong
+              text-transform      uppercase !important // overwriting inline
+              font-weight         200
+              font-size           16px
+
+        th.dow
+          border-top              1px solid $well-border-color
+          height                  42px
+
+      th,td span
+        font-weight               200
+      tbody
+        tr td button
+          border-radius         0
+
+          &.btn-today
+            background-color      $prospa-green
+            color                 #fff
+

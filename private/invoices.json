@@ -1,0 +1,936 @@
+[
+{
+    "_id" : "WPz8kaDwHJTc47rWP",
+    "Date" : "2015-11-09T00:00:00",
+    "DueDate" : "2015-11-18T00:00:00",
+    "Total" : 148.5000000000000000,
+    "LineItems" : [
+        {
+            "Description" : "Company car park (month in advance)"
+        }
+    ]
+}
+,
+{
+    "_id" : "oZBZukRhnKummsSa7",
+    "Date" : "2015-11-22T00:00:00",
+    "DueDate" : "2015-11-29T00:00:00",
+    "Total" : 1193.5000000000000000,
+    "LineItems" : [
+        {
+            "Description" : "Laptop (oliver)"
+        }
+    ]
+}
+,
+{
+    "_id" : "CLQB8XnNsPegCapdd",
+    "Date" : "2015-11-23T00:00:00",
+    "DueDate" : "2015-12-03T00:00:00",
+    "Total" : 550,
+    "LineItems" : [
+        {
+            "Description" : "Half day training - Microsoft Office"
+        }
+    ]
+}
+,
+{
+    "_id" : "uTLpr23DYJkQcsvtt",
+    "Date" : "2015-11-22T00:00:00",
+    "DueDate" : "2015-12-02T00:00:00",
+    "Total" : 275,
+    "LineItems" : [
+        {
+            "Description" : "Project management & implementation - branding workshop with your team"
+        }
+    ]
+}
+,
+{
+    "_id" : "TnvvM3cynBxxHHp5k",
+    "Date" : "2015-11-28T00:00:00",
+    "DueDate" : "2015-12-09T00:00:00",
+    "Total" : 1496,
+    "LineItems" : [
+        {
+            "Description" : "Project management & implementation - 'due diligence' stocktake of your project scope/schedule/implementation plan/outcome measures (hourly rate as agreed)"
+        }
+    ]
+}
+,
+{
+    "_id" : "JrrxBzg8qQFTDFg98",
+    "Date" : "2015-12-23T00:00:00",
+    "DueDate" : "2016-01-09T00:00:00",
+    "Total" : 0,
+    "LineItems" : [
+        {
+            "Description" : "Power bil"
+        }
+    ]
+}
+,
+{
+    "_id" : "XXYFJZt4Q2MjQeZkG",
+    "Date" : "2015-11-28T00:00:00",
+    "DueDate" : "2015-12-09T00:00:00",
+    "Total" : 75.9000000000000057,
+    "LineItems" : [
+        {
+            "Description" : "Our monthly share building security"
+        }
+    ]
+}
+,
+{
+    "_id" : "ngPfwj9qZCzjef9bX",
+    "Date" : "2015-11-26T00:00:00",
+    "DueDate" : "2015-12-09T00:00:00",
+    "Total" : 35.7500000000000000,
+    "LineItems" : [
+        {
+            "Description" : "ADSL monthly"
+        }
+    ]
+}
+,
+{
+    "_id" : "afqEPz2EzKqnijCCd",
+    "Date" : "2015-11-22T00:00:00",
+    "DueDate" : "2015-12-09T00:00:00",
+    "Total" : 385,
+    "LineItems" : [
+        {
+            "Description" : "Power bil"
+        }
+    ]
+}
+,
+{
+    "_id" : "cRH8HH2cRu6WYybJs",
+    "Date" : "2015-11-10T00:00:00",
+    "DueDate" : "2015-11-17T00:00:00",
+    "Total" : 218.9000000000000057,
+    "LineItems" : [
+        {
+            "Description" : "Flights for ICT 08 conference"
+        }
+    ]
+}
+,
+{
+    "_id" : "K63kf3cgrLZmN4QeW",
+    "Date" : "2015-11-09T00:00:00",
+    "DueDate" : "2015-11-18T00:00:00",
+    "Total" : 550,
+    "LineItems" : [
+        {
+            "Description" : "Desktop/network support via email & phone.\nPer month fixed fee for minimum 20 hours/month."
+        }
+    ]
+}
+,
+{
+    "_id" : "4fdoZbfZMYhcSmgcE",
+    "Date" : "2015-11-09T00:00:00",
+    "DueDate" : "2015-11-18T00:00:00",
+    "Total" : 550,
+    "LineItems" : [
+        {
+            "Description" : "Desktop/network support via email & phone.\nPer month fixed fee for minimum 20 hours/month."
+        }
+    ]
+}
+,
+{
+    "_id" : "e8Rmq6pX6wNqnqsqj",
+    "Date" : "2015-11-09T00:00:00",
+    "DueDate" : "2015-11-18T00:00:00",
+    "Total" : 550,
+    "LineItems" : [
+        {
+            "Description" : "Desktop/network support via email & phone.\nPer month fixed fee for minimum 20 hours/month."
+        }
+    ]
+}
+,
+{
+    "_id" : "yk8dYmEWQEhAiLg9W",
+    "Date" : "2015-11-09T00:00:00",
+    "DueDate" : "2015-11-18T00:00:00",
+    "Total" : 550,
+    "LineItems" : [
+        {
+            "Description" : "Desktop/network support via email & phone.\nPer month fixed fee for minimum 20 hours/month."
+        }
+    ]
+}
+,
+{
+    "_id" : "ySyzxvJDJ2LzMHBSK",
+    "Date" : "2015-11-09T00:00:00",
+    "DueDate" : "2015-11-18T00:00:00",
+    "Total" : 550,
+    "LineItems" : [
+        {
+            "Description" : "Desktop/network support via email & phone.\nPer month fixed fee for minimum 20 hours/month."
+        }
+    ]
+}
+,
+{
+    "_id" : "Tq7eRrMPXTFqykgz6",
+    "Date" : "2015-11-18T00:00:00",
+    "DueDate" : "2015-11-28T00:00:00",
+    "Total" : 1100,
+    "LineItems" : [
+        {
+            "Description" : "Project management & implementation - branding workshop with your team"
+        }
+    ]
+}
+,
+{
+    "_id" : "EtHp4ccSvMKRvkmHn",
+    "Date" : "2015-11-28T00:00:00",
+    "DueDate" : "2015-12-09T00:00:00",
+    "Total" : 1155,
+    "LineItems" : [
+        {
+            "Description" : "Project management & implementation - 'due diligence' stocktake of your project scope/schedule/implementation plan/outcome measures (hourly rate as agreed)"
+        }
+    ]
+}
+,
+{
+    "_id" : "4NLAHT9iuXd4QhTCN",
+    "Date" : "2015-11-15T00:00:00",
+    "DueDate" : "2015-11-28T00:00:00",
+    "Total" : 1485,
+    "LineItems" : [
+        {
+            "Description" : "Half day training - Microsoft Office - for your Customer Support Team (Session 1)"
+        },
+        {
+            "Description" : "Half day training - Microsoft Office - for your Lending Service Analysts (Session 2)"
+        },
+        {
+            "Description" : "Half day training - Microsoft Office - for your Priority Services Team (Session 3)"
+        }
+    ]
+}
+,
+{
+    "_id" : "7v5ED8ryQGg8naqCH",
+    "Date" : "2015-11-28T00:00:00",
+    "DueDate" : "2015-12-09T00:00:00",
+    "Total" : 6160,
+    "LineItems" : [
+        {
+            "Description" : "Project Management for your Content Mangement Implementation Project (CSD0845)- onsite daily rate (2 days per week last month)"
+        }
+    ]
+}
+,
+{
+    "_id" : "tCYsYMv8fW8RZioBx",
+    "Date" : "2015-12-08T00:00:00",
+    "DueDate" : "2015-12-24T00:00:00",
+    "Total" : 660,
+    "LineItems" : [
+        {
+            "Description" : "Project management & implementation - website revamp workshop with your team to incorporate new brand and mission statement"
+        }
+    ]
+}
+,
+{
+    "_id" : "drh8YJB8WmWFDfpuG",
+    "Date" : "2015-12-19T00:00:00",
+    "DueDate" : "2015-12-26T00:00:00",
+    "Total" : 104.5000000000000000,
+    "LineItems" : [
+        {
+            "Description" : "Secure destruction services"
+        }
+    ]
+}
+,
+{
+    "_id" : "gvJXwxyLzQ2xfrRHY",
+    "Date" : "2015-12-09T00:00:00",
+    "DueDate" : "2015-12-24T00:00:00",
+    "Total" : 170.5000000000000000,
+    "LineItems" : [
+        {
+            "Description" : "Office cleaning services"
+        }
+    ]
+}
+,
+{
+    "_id" : "49ewzPNwWo33NjieS",
+    "Date" : "2015-12-10T00:00:00",
+    "DueDate" : "2015-12-24T00:00:00",
+    "Total" : 137.8899999999999864,
+    "LineItems" : [
+        {
+            "Description" : "Group plan"
+        },
+        {
+            "Description" : "Plus extra calls"
+        },
+        {
+            "Description" : "Plus extra calls"
+        }
+    ]
+}
+,
+{
+    "_id" : "R5yKuzvWFqL8f7hBH",
+    "Date" : "2015-12-11T00:00:00",
+    "DueDate" : "2015-12-18T00:00:00",
+    "Total" : 450,
+    "LineItems" : [
+        {
+            "Description" : "Glasses, jugs, ice buckets, patters etc for client function"
+        },
+        {
+            "Description" : "Refundable bond for return of clean"
+        }
+    ]
+}
+,
+{
+    "_id" : "2q2BKo4jSFLbqLkBg",
+    "Date" : "2015-12-10T00:00:00",
+    "DueDate" : "2015-12-19T00:00:00",
+    "Total" : 550,
+    "LineItems" : [
+        {
+            "Description" : "Desktop/network support via email & phone.\nPer month fixed fee for minimum 20 hours/month."
+        }
+    ]
+}
+,
+{
+    "_id" : "4PFZQ77E7PMbp29BR",
+    "Date" : "2015-12-10T00:00:00",
+    "DueDate" : "2015-12-19T00:00:00",
+    "Total" : 550,
+    "LineItems" : [
+        {
+            "Description" : "Desktop/network support via email & phone.\nPer month fixed fee for minimum 20 hours/month."
+        }
+    ]
+}
+,
+{
+    "_id" : "HpWiGzFCi92jb5mSz",
+    "Date" : "2015-12-10T00:00:00",
+    "DueDate" : "2015-12-19T00:00:00",
+    "Total" : 550,
+    "LineItems" : [
+        {
+            "Description" : "Desktop/network support via email & phone.\nPer month fixed fee for minimum 20 hours/month."
+        }
+    ]
+}
+,
+{
+    "_id" : "YuXiBrB3Wyekfv3P9",
+    "Date" : "2015-12-10T00:00:00",
+    "DueDate" : "2015-12-19T00:00:00",
+    "Total" : 550,
+    "LineItems" : [
+        {
+            "Description" : "Desktop/network support via email & phone.\nPer month fixed fee for minimum 20 hours/month."
+        }
+    ]
+}
+,
+{
+    "_id" : "zssf686rwft7G69Li",
+    "Date" : "2015-12-29T00:00:00",
+    "DueDate" : "2016-01-09T00:00:00",
+    "Total" : 75.9000000000000057,
+    "LineItems" : [
+        {
+            "Description" : "Our monthly share building security"
+        }
+    ]
+}
+,
+{
+    "_id" : "e5X3syNb27ZxXTwfS",
+    "Date" : "2015-12-27T00:00:00",
+    "DueDate" : "2016-01-09T00:00:00",
+    "Total" : 35.7500000000000000,
+    "LineItems" : [
+        {
+            "Description" : "ADSL monthly"
+        }
+    ]
+}
+,
+{
+    "_id" : "W9nCNdWvDZTnmjkaH",
+    "Date" : "2015-12-23T00:00:00",
+    "DueDate" : "2016-01-09T00:00:00",
+    "Total" : 324.5000000000000000,
+    "LineItems" : [
+        {
+            "Description" : "Power bill"
+        }
+    ]
+}
+,
+{
+    "_id" : "TrRL553LHEWSrYPAx",
+    "Date" : "2015-12-10T00:00:00",
+    "DueDate" : "2016-01-09T00:00:00",
+    "Total" : 148.5000000000000000,
+    "LineItems" : [
+        {
+            "Description" : "Company car park (month in advance)"
+        }
+    ]
+}
+,
+{
+    "_id" : "nxRp3F6NJ2dmBpsLR",
+    "Date" : "2015-12-19T00:00:00",
+    "DueDate" : "2015-12-29T00:00:00",
+    "Total" : 4620,
+    "LineItems" : [
+        {
+            "Description" : "Project Management - onsite daily rate - your CRM integration project"
+        }
+    ]
+}
+,
+{
+    "_id" : "z4w73YZAScuAZjHYF",
+    "Date" : "2015-12-13T00:00:00",
+    "DueDate" : "2015-12-29T00:00:00",
+    "Total" : 3575,
+    "LineItems" : [
+        {
+            "Description" : "Development work - developer onsite per day"
+        }
+    ]
+}
+,
+{
+    "_id" : "eP62ekCxaGJFtpsos",
+    "Date" : "2015-12-29T00:00:00",
+    "DueDate" : "2016-01-09T00:00:00",
+    "Total" : 1320,
+    "LineItems" : [
+        {
+            "Description" : "WEBSITE REDESIGN PROJECT\n========================\n- Initial analysis & summary of current site\n\n- Brainstorm site outcomes with your team\n- Identify audience & key stakeholders\n- Review content ideas currently not catered for\n\n- Presentation of initial analysis & feedback session\n- Brainstorm improvements to current content\n\n- Group structure discussion\n- Actions list for follow up\n\n- Notes from session presented for your Exec Team"
+        }
+    ]
+}
+,
+{
+    "_id" : "AQLNu5qhgK6Q22Czj",
+    "Date" : "2016-01-27T00:00:00",
+    "DueDate" : "2016-01-27T00:00:00",
+    "Total" : 6930,
+    "LineItems" : [
+        {
+            "Description" : "Desks, chairs, reception furniture for office"
+        }
+    ]
+}
+,
+{
+    "_id" : "WNBY4h7D9L9j8ekEK",
+    "Date" : "2016-02-09T00:00:00",
+    "DueDate" : "2016-02-15T00:00:00",
+    "Total" : 396,
+    "LineItems" : [
+        {
+            "Description" : "Marketing guides"
+        }
+    ]
+}
+,
+{
+    "_id" : "swjf5CabKuAYjqifE",
+    "Date" : "2016-02-08T00:00:00",
+    "DueDate" : "2016-02-28T00:00:00",
+    "Total" : 825,
+    "LineItems" : [
+        {
+            "Description" : "Feedback sessions with your stakeholders"
+        }
+    ]
+}
+,
+{
+    "_id" : "BCbX8NpaSZW3mghTP",
+    "Date" : "2016-02-08T00:00:00",
+    "DueDate" : "2016-02-23T00:00:00",
+    "Total" : 550,
+    "LineItems" : [
+        {
+            "Description" : "Desktop/network support via email & phone.\nPer month fixed fee for minimum 20 hours/month."
+        }
+    ]
+}
+,
+{
+    "_id" : "ZFBBjj8u5H2yNWpLG",
+    "Date" : "2016-02-08T00:00:00",
+    "DueDate" : "2016-02-23T00:00:00",
+    "Total" : 550,
+    "LineItems" : [
+        {
+            "Description" : "Desktop/network support via email & phone.\nPer month fixed fee for minimum 20 hours/month."
+        }
+    ]
+}
+,
+{
+    "_id" : "ax3tznsg4tALbF5SC",
+    "Date" : "2016-02-08T00:00:00",
+    "DueDate" : "2016-02-23T00:00:00",
+    "Total" : 550,
+    "LineItems" : [
+        {
+            "Description" : "Desktop/network support via email & phone.\nPer month fixed fee for minimum 20 hours/month."
+        }
+    ]
+}
+,
+{
+    "_id" : "twumcvPw8uuD6KoEs",
+    "Date" : "2016-02-08T00:00:00",
+    "DueDate" : "2016-02-23T00:00:00",
+    "Total" : 550,
+    "LineItems" : [
+        {
+            "Description" : "Desktop/network support via email & phone.\nPer month fixed fee for minimum 20 hours/month."
+        }
+    ]
+}
+,
+{
+    "_id" : "k3Bm3fbyuZCcuLX43",
+    "Date" : "2016-01-24T00:00:00",
+    "DueDate" : "2016-02-13T00:00:00",
+    "Total" : 3850,
+    "LineItems" : [
+        {
+            "Description" : "Project Management - onsite daily rate"
+        }
+    ]
+}
+,
+{
+    "_id" : "oopt6QR22WJb4GPJT",
+    "Date" : "2016-01-29T00:00:00",
+    "DueDate" : "2016-02-18T00:00:00",
+    "Total" : 3080,
+    "LineItems" : [
+        {
+            "Description" : "Project Management for restructure - onsite daily rate"
+        }
+    ]
+}
+,
+{
+    "_id" : "XKDD9bcFPQXXDCzo6",
+    "Date" : "2016-02-08T00:00:00",
+    "DueDate" : "2016-02-15T00:00:00",
+    "Total" : 495,
+    "LineItems" : [
+        {
+            "Description" : "Project management & implementation - website revamp workshop with your team"
+        }
+    ]
+}
+,
+{
+    "_id" : "9ZLAXriQTnyszyPju",
+    "Date" : "2016-01-09T00:00:00",
+    "DueDate" : "2016-01-09T00:00:00",
+    "Total" : 53.8999999999999986,
+    "LineItems" : [
+        {
+            "Description" : "Monthly subscription to Xero"
+        }
+    ]
+}
+,
+{
+    "_id" : "MbTjWgPNRP3HQdznn",
+    "Date" : "2016-01-09T00:00:00",
+    "DueDate" : "2015-12-19T00:00:00",
+    "Total" : 550,
+    "LineItems" : [
+        {
+            "Description" : "Half day training - Microsoft Office"
+        }
+    ]
+}
+,
+{
+    "_id" : "RjpSv9LYnLDaPzrST",
+    "Date" : "2016-01-09T00:00:00",
+    "DueDate" : "2016-01-24T00:00:00",
+    "Total" : 170.5000000000000000,
+    "LineItems" : [
+        {
+            "Description" : "Office cleaning services"
+        }
+    ]
+}
+,
+{
+    "_id" : "AFMW3bfGD8cGFTJjf",
+    "Date" : "2016-01-10T00:00:00",
+    "DueDate" : "2016-01-23T00:00:00",
+    "Total" : 550,
+    "LineItems" : [
+        {
+            "Description" : "Desktop/network support via email & phone.\nPer month fixed fee for minimum 20 hours/month."
+        }
+    ]
+}
+,
+{
+    "_id" : "9zcpjEeN4DjLcrptH",
+    "Date" : "2016-01-10T00:00:00",
+    "DueDate" : "2016-01-23T00:00:00",
+    "Total" : 550,
+    "LineItems" : [
+        {
+            "Description" : "Desktop/network support via email & phone.\nPer month fixed fee for minimum 20 hours/month."
+        }
+    ]
+},
+{
+    "_id" : "xoa5aZo5J68fw5c5M",
+    "Date" : "2016-01-10T00:00:00",
+    "DueDate" : "2016-01-23T00:00:00",
+    "Total" : 550,
+    "LineItems" : [
+        {
+            "Description" : "Desktop/network support via email & phone.\nPer month fixed fee for minimum 20 hours/month."
+        }
+    ]
+}
+,
+{
+    "_id" : "T87m6bFNrAjdoqxRQ",
+    "Date" : "2016-01-23T00:00:00",
+    "DueDate" : "2016-02-08T00:00:00",
+    "Total" : 331.1000000000000227,
+    "LineItems" : [
+        {
+            "Description" : "Power bill"
+        }
+    ]
+}
+,
+{
+    "_id" : "WiJ2sRMwYFdwTvhvP",
+    "Date" : "2016-01-29T00:00:00",
+    "DueDate" : "2016-02-08T00:00:00",
+    "Total" : 75.9000000000000057,
+    "LineItems" : [
+        {
+            "Description" : "Our monthly share building security"
+        }
+    ]
+}
+,
+{
+    "_id" : "Ejg7KucMuXEsEPkmE",
+    "Date" : "2016-02-08T00:00:00",
+    "DueDate" : "2016-02-08T00:00:00",
+    "Total" : 53.8999999999999986,
+    "LineItems" : [
+        {
+            "Description" : "Monthly subscription to Xero"
+        }
+    ]
+}
+,
+{
+    "_id" : "Qe3c3ZRWo7T5E9QXj",
+    "Date" : "2016-02-09T00:00:00",
+    "DueDate" : "2016-02-17T00:00:00",
+    "Total" : 132,
+    "LineItems" : [
+        {
+            "Description" : "Annual corporate subscription"
+        }
+    ]
+}
+,
+{
+    "_id" : "59KYh6hakQfGcCzMT",
+    "Date" : "2016-01-29T00:00:00",
+    "DueDate" : "2016-02-13T00:00:00",
+    "Total" : 1485,
+    "LineItems" : [
+        {
+            "Description" : "Annual subscription for Aus Business Prof Assoc "
+        }
+    ]
+}
+,
+{
+    "_id" : "DifmpS8jGnJ2G4X6t",
+    "Date" : "2016-02-08T00:00:00",
+    "DueDate" : "2016-02-08T00:00:00",
+    "Total" : 115.2000000000000028,
+    "LineItems" : [
+        {
+            "Description" : "Brand You & Think Big for office"
+        }
+    ]
+}
+,
+{
+    "_id" : "Rs7zL3k92HyXFFuQH",
+    "Date" : "2016-02-09T00:00:00",
+    "DueDate" : "2016-02-15T00:00:00",
+    "Total" : 550,
+    "LineItems" : [
+        {
+            "Description" : "Half day training - Microsoft Office"
+        }
+    ]
+}
+,
+{
+    "_id" : "teWXFubbk8CG9C8Hn",
+    "Date" : "2016-02-03T00:00:00",
+    "DueDate" : "2016-02-28T00:00:00",
+    "Total" : 2166.9899999999997817,
+    "LineItems" : [
+        {
+            "Description" : "Laptop (Tracy)"
+        }
+    ]
+}
+,
+{
+    "_id" : "9ZNymzx4z6bBQHcbA",
+    "Date" : "2016-01-29T00:00:00",
+    "DueDate" : "2016-02-08T00:00:00",
+    "Total" : 1100,
+    "LineItems" : [
+        {
+            "Description" : "Half day training - Microsoft Office - Admin session"
+        },
+        {
+            "Description" : "Half day training - Microsoft Office - DJ session"
+        }
+    ]
+}
+,
+{
+    "_id" : "iBwyuHiSoZmn3jf2t",
+    "Date" : "2016-02-08T00:00:00",
+    "DueDate" : "2016-02-23T00:00:00",
+    "Total" : 840,
+    "LineItems" : [
+        {
+            "Description" : "Golf balls - white single"
+        }
+    ]
+}
+,
+{
+    "_id" : "bFaX4kvG3bhj7gnwF",
+    "Date" : "2015-12-29T00:00:00",
+    "DueDate" : "2016-01-12T00:00:00",
+    "Total" : 2000,
+    "LineItems" : [
+        {
+            "Description" : "Design concepts for advertising material"
+        }
+    ]
+}
+,
+{
+    "_id" : "C5sxqKfs9dEQNnZsw",
+    "Date" : "2016-01-29T00:00:00",
+    "DueDate" : "2016-02-11T00:00:00",
+    "Total" : 2500,
+    "LineItems" : [
+        {
+            "Description" : "Design prototypes for advertising material"
+        }
+    ]
+}
+,
+{
+    "_id" : "vLvFKPxe3oi3YsWiF",
+    "Date" : "2016-01-27T00:00:00",
+    "DueDate" : "2016-02-08T00:00:00",
+    "Total" : 54.1300000000000026,
+    "LineItems" : [
+        {
+            "Description" : "ADSL monthly"
+        }
+    ]
+}
+,
+{
+    "_id" : "uyqK5p7Wp9uTWvGtt",
+    "Date" : "2016-01-28T00:00:00",
+    "DueDate" : "2016-02-07T00:00:00",
+    "Total" : 108.5999999999999943,
+    "LineItems" : [
+        {
+            "Description" : "Monthly electricity"
+        }
+    ]
+}
+,
+{
+    "_id" : "QkPLnvwiap59dE7an",
+    "Date" : "2016-02-09T00:00:00",
+    "DueDate" : "2016-02-15T00:00:00",
+    "Total" : 242,
+    "LineItems" : [
+        {
+            "Description" : "Taxi services"
+        }
+    ]
+}
+,
+{
+    "_id" : "a896GPdrYaemwNCJ5",
+    "Date" : "2015-12-10T00:00:00",
+    "DueDate" : "2016-01-08T00:00:00",
+    "Total" : 1063.5599999999999454,
+    "LineItems" : [
+        {
+            "Description" : "Photocopier repair & drum replacement"
+        }
+    ]
+}
+,
+{
+    "_id" : "FZeEAei7cYJfaKgiX",
+    "Date" : "2016-01-29T00:00:00",
+    "DueDate" : "2016-02-08T00:00:00",
+    "Total" : 6187.5000000000000000,
+    "LineItems" : [
+        {
+            "Description" : "Onsite project management for CRM Project 3 days/week"
+        }
+    ]
+}
+,
+{
+    "_id" : "drx2zRL4XzPva2KNW",
+    "Date" : "2016-01-24T00:00:00",
+    "DueDate" : "2016-02-03T00:00:00",
+    "Total" : 1181.2500000000000000,
+    "LineItems" : [
+        {
+            "Description" : "Monthly rent in advance"
+        }
+    ]
+}
+,
+{
+    "_id" : "rkGGMzNCMs23ebyp4",
+    "Date" : "2016-02-03T00:00:00",
+    "DueDate" : "2016-02-23T00:00:00",
+    "Total" : 170.5000000000000000,
+    "LineItems" : [
+        {
+            "Description" : "Office cleaning services"
+        }
+    ]
+}
+,
+{
+    "_id" : "9zDKyhCXuGjrQjTAa",
+    "Date" : "2016-02-04T00:00:00",
+    "DueDate" : "2016-02-20T00:00:00",
+    "Total" : 411.3500000000000227,
+    "LineItems" : [
+        {
+            "Description" : "Annual service corp car"
+        }
+    ]
+}
+,
+{
+    "_id" : "FxjTGehRi4hC9koKp",
+    "Date" : "2016-01-10T00:00:00",
+    "DueDate" : "2016-01-29T00:00:00",
+    "Total" : 7150,
+    "LineItems" : [
+        {
+            "Description" : "Development work - developer onsite per day"
+        }
+    ]
+}
+,
+{
+    "_id" : "6nwxikcmP8f6XHXHf",
+    "Date" : "2016-01-10T00:00:00",
+    "DueDate" : "2016-01-23T00:00:00",
+    "Total" : 550,
+    "LineItems" : [
+        {
+            "Description" : "Desktop/network support via email & phone.\nPer month fixed fee for minimum 20 hours/month."
+        }
+    ]
+}
+,
+{
+    "_id" : "uapEYpMkCcfpQ8cbc",
+    "Date" : "2016-02-09T00:00:00",
+    "DueDate" : "2016-02-19T00:00:00",
+    "Total" : 914.5499999999999545,
+    "LineItems" : [
+        {
+            "Description" : "Project team meeting to discuss dev changes required to your online gift basket ordering system"
+        },
+        {
+            "Description" : "Development work - per hour rate"
+        }
+    ]
+}
+,
+{
+    "_id" : "6CaRwzd2bNvT7Yc4r",
+    "Date" : "2016-02-09T00:00:00",
+    "DueDate" : "2016-02-27T00:00:00",
+    "Total" : 234,
+    "LineItems" : [
+        {
+            "Description" : "Golf balls - white single"
+        },
+        {
+            "Description" : "Courier charge"
+        }
+    ]
+}
+,
+{
+    "_id" : "sENvrkz4KHfM5rxb6",
+    "Date" : "2016-02-03T00:00:00",
+    "DueDate" : "2016-02-13T00:00:00",
+    "Total" : 130,
+    "LineItems" : [
+        {
+            "Description" : "Room hire"
+        }
+    ]
+}
+]

@@ -1,0 +1,31 @@
+$font-family            = 'myriad-pro', arial
+$font-size-base         = 16px
+$font-weight-light      = 300
+$font-weight-regular    = 400
+$font-weight-semibold   = 600
+
+// this mixin is loaded in the body to set the top level font properties
+//
+default-font()
+
+
+  font-family       $font-family
+  font-weight       $font-weight-regular
+  +retina()
+    font-weight       $font-weight-light
+
+  font-size         $font-size-base // = 1em
+  line-height       1.2
+
+
+  +at(1)
+    font-size       $font-size-base*0.875
+  +at(2)
+    font-size       $font-size-base*0.9375
+  +at(3)
+    font-size       $font-size-base
+  +at(4)
+    font-size       $font-size-base
+  color             $color-charcoal-1
+
+

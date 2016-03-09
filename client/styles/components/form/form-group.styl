@@ -1,0 +1,147 @@
+@import "../../imports.styl"
+
+/******* Form Group *****************
+
+Form Group is a style set for displaying to formfields
+
+**************************************/
+
+
+
+// ********************* mixins **********************
+icon()
+  .icon
+    position                  absolute
+    top                       50%
+    left                      0
+
+    margin                    0 1em
+    margin-top                -6px
+    svg-container( 12px, 12px, $color-charcoal-8  )
+
+form-group-error()
+  border-color                $error-color
+  color                       $error-color !important
+  box-shadow                  none
+
+// *********************** selectors ****************************
+
+.form-group
+
+  transition                all .2s ease-in
+  margin-bottom             0
+  position                  relative
+
+  .form-control
+    border-radius           5px
+    font-size               16px
+    border                  1px solid $color-charcoal-8
+    color                   $color-charcoal-1
+    &[disabled]
+    &[readonly]
+      background-color      $color-charcoal-11
+
+  .help-block
+    display                 none
+    position                absolute
+    top                     45px
+
+    z-index                 10
+    color                   $error-color
+    font-size               13px
+    width                   100%
+    text-align              left
+    white-space             nowrap
+
+    svg
+      height  14px
+      width   14px
+      margin-right            9px
+      margin-top              1px
+      float                   left
+      fill                    $error-color
+
+  & + .form-group
+    margin-left               10px
+
+
+  &.grouped
+    border                    1px solid $color-charcoal-8
+    box-shadow                inset 0 1px 1px rgba(0,0,0,0.075);
+    border-radius             5px
+
+    clearfix() // bootstrap mixin
+
+    position                  relative
+
+    > div
+      width                   50%
+      float                   left
+
+      input
+        border                none
+        box-shadow            none
+
+      input:nth-child( 2 )
+        border-right          1px solid #e9eaeb
+        border-radius         5px 0 0 5px
+      input:nth-child( 1 )
+        border-left           0
+        border-radius         0 5px 5px 0
+
+
+
+
+
+  &.addon, .addon
+    position                  relative
+
+    icon()
+
+    input
+      padding-left            37px
+
+  &:focus
+    outline                   none
+    border-color              inherit
+    // border-color            $bootstrap-input-border
+    box-shadow                none
+
+  // &:hover
+  //   border-color              $bootstrap-input-border-focus
+  //   box-shadow                inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6)
+
+
+  &.has-error
+    margin-bottom           20px
+    &.grouped
+      form-group-error()
+
+    .form-control
+      form-group-error()
+
+    .icon
+      fill                    $error-color
+      use
+        fill                    $error-color
+
+    .help-block
+      display block
+
+
+  // disable spinners for number fields
+  //
+  input[type=number]::-webkit-inner-spin-button
+  input[type=number]::-webkit-outer-spin-button
+    -webkit-appearance      none
+    -moz-appearance         none
+    appearance              none
+    margin                  0
+  // for FF
+  input[type=number]
+    -moz-appearance: textfield;
+  // you could use step=0 in your number field and disable spinner for that field
+  // input[step="0"]::-webkit-inner-spin-button { -webkit-appearance: none;}
+
+
+

@@ -1,0 +1,64 @@
+@import "../../imports.styl"
+
+form
+
+  &.pp-inline
+    label
+      +from-width(2)
+        height                  $form-control-height
+        line-height             $form-control-height
+
+  .row
+    // &:nth-child(2n)
+    border-bottom           1px solid $color-charcoal-10
+
+    // &:first-child
+    //   border-top              1px solid $color-charcoal-10
+    &:last-child
+      // border-top              1px solid $color-charcoal-10
+      border-bottom           none
+
+    // position                  relative
+    margin-left               -20px
+    margin-right              -20px
+    padding                   19px 20px
+
+
+
+
+  input.form-control, select
+    height                    $form-control-height
+
+    &:focus
+      box-shadow              none
+
+    placeholder-animations( $placeholder-color, .65, .35s, 1,  .35s, 0, .35s )
+
+
+  [bs-select].ng-pristine
+    color                     $placeholder-color
+    opacity                   .65
+
+
+  input[type=password]
+
+    font-size                 20px
+    letter-spacing            3px
+
+    placeholder-font( 16px, initial, 1.4 )
+
+
+  .form-checkbox
+    &.has-error
+      color                     $error-color
+    label
+      line-height               initial
+      height                    initial
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+dd.invoice-list-item()
+
+  div.open(ng-show="type === 'open'" layout="row" layout-align="space-around start")
+    div.title.text-left(flex="10") {{ invoiceData.Total | currency: '$' : 0 }}
+
+    div(flex="25" flex-offset="5" layout="column")
+      div.title {{invoiceData.LineItems[0].Description}}
+      div.subtitle &#35;{{invoiceData.InvoiceNumber}}
+
+    div.title(flex="20" flex-offset="5") {{ invoiceData.Date | dateFormat }}
+
+    div(flex="35" layout="column")
+      div.title {{ invoiceData.DueDate | dateFormat }}
+      div.subtitle {{ vm.dateDifference }} days later
+
+
+
+
+
+

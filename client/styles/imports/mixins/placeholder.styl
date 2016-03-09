@@ -1,0 +1,51 @@
+placeholder-animations( placeholder-color, default-opacity, default-timing, hover-opacity, hover-timing, focus-opacity, focus-timing )
+
+  placeholder-default( vendor, selector )
+    &{selector}-placeholder
+      color                   placeholder-color
+      opacity                 default-opacity
+      -{vendor}-transition    opacity default-timing ease-in-out
+      transition              opacity default-timing ease-in-out
+
+  placeholder-hover( vendor, selector )
+    &:hover{selector}-placeholder
+      opacity                 hover-opacity
+      -{vendor}-transition    opacity hover-timing ease-in-out
+      transition              opacity hover-timing ease-in-out
+
+  placeholder-focus( vendor, selector )
+    &:focus{selector}-placeholder
+      opacity                 focus-opacity
+      -{vendor}-transition    opacity focus-timing ease-in-out
+      transition              opacity focus-timing ease-in-out
+
+
+  placeholder-default( webkit, '::-webkit-input' )
+  placeholder-default( moz, ':-moz' )
+  placeholder-default( moz, '::-moz' )
+  placeholder-default( ms, ':-ms-input' )
+
+  placeholder-hover( webkit, '::-webkit-input' )
+  placeholder-hover( moz, ':-moz' )
+  placeholder-hover( moz, '::-moz' )
+  placeholder-hover( ms, ':-ms-input' )
+
+
+  placeholder-focus( webkit, '::-webkit-input' )
+  placeholder-focus( moz, ':-moz' )
+  placeholder-focus( moz, '::-moz' )
+  placeholder-focus( ms, ':-ms-input' )
+
+placeholder-font( size, spacing, line-height )
+
+  placeholder-default( selector )
+    &{selector}-placeholder
+      font-size                 size
+      letter-spacing            spacing
+      line-height               line-height
+
+  placeholder-default( '::-webkit-input' )
+  placeholder-default( ':-moz' )
+  placeholder-default( '::-moz' )
+  placeholder-default( ':-ms-input' )
+

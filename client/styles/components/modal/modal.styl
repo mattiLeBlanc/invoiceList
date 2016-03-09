@@ -1,0 +1,77 @@
+@import "../../imports.styl"
+
+// .modal-backdrop.am-fade
+//   background                      #000
+//   opacity                         .75;
+
+
+.modal-backdrop.am-fade
+  // opacity                         .5
+  background                      rgba(0, 0, 0, .75)
+  transition                      background .15s linear
+
+  &.ng-enter
+    // opacity                       0
+    background                      rgba(0, 0, 0, 0)
+
+    &.ng-enter-active
+
+      // opacity                     .5
+      background                  rgba(0, 0, 0, .75)
+
+  &.ng-leave
+    // opacity                       .5
+    background                    rgba(0, 0, 0, .75)
+    &.ng-leave-active
+      // opacity                     0
+      background                      rgba(0, 0, 0, 0)
+
+
+
+.modal
+  &.center
+    .modal-dialog
+      position                    fixed
+      top                         40%
+      left                        50%
+      min-width                   320px
+      max-width                   630px
+      width                       50%
+      transform                   translateX(-50%) translateY(-50%)
+
+  .modal-content
+    border-radius                 10px
+    box-shadow                    none
+
+  .modal-header
+    border-bottom-color           $color-charcoal-9
+    button.close
+      color                       $color-charcoal-3
+      transition                  opacity .15s ease-in-out
+      font-size                   24px
+
+      &:hover
+        opacity                   1
+        transition                opacity .15s ease-in-out
+      &:focus
+        outline                   none
+      span
+        padding                   10px
+
+  .modal-body
+    padding                       0
+    // padding                       50px
+
+  .modal-footer
+    border-top-color              $color-charcoal-9
+    background-color              $color-charcoal-12
+    border-radius                 0 0 10px 10px
+    padding                       27px 25px 28px 25px
+
+  .modal-footer-row
+    border-top                    1px solid $color-charcoal-9
+
+    background-color              $color-charcoal-12
+    border-radius                 0 0 10px 10px
+    padding                       27px 25px 28px 25px
+

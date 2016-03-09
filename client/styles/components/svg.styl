@@ -1,0 +1,23 @@
+@import "../imports.styl"
+
+// -------------  MIXINS ------------
+
+svg-use-color( $color )
+  fill                  $color
+  use
+    fill                $color
+
+
+
+// -------------  SELECTORS ------------
+
+svg
+  width   100%
+  height  100%
+
+  float    left
+
+  &.white
+    svg-use-color( $color-white )
+
+

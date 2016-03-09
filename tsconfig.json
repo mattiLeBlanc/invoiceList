@@ -1,0 +1,14 @@
+{
+    "filesGlob": [
+        "./typings/browser.d.ts",
+        "./typings/custom.d.ts",
+        "./server/**/*.ts",
+        "./client/**/*.ts"
+    ],
+    "compilerOptions": {
+        "module": "commonjs"
+    },
+    "compileOnSave": false,
+    "buildOnSave": false
+
+}

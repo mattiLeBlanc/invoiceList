@@ -1,0 +1,11 @@
+{
+  "ambientDependencies": {
+    "angular": "github:DefinitelyTyped/DefinitelyTyped/angularjs/angular.d.ts#e69fe60f2d6377ea4fae539493997b098f52cad1",
+    "angular-meteor": "github:DefinitelyTyped/DefinitelyTyped/angular-meteor/angular-meteor.d.ts#e69fe60f2d6377ea4fae539493997b098f52cad1",
+    "angular-ui-router": "github:DefinitelyTyped/DefinitelyTyped/angular-ui-router/angular-ui-router.d.ts#e69fe60f2d6377ea4fae539493997b098f52cad1",
+    "jquery": "github:DefinitelyTyped/DefinitelyTyped/jquery/jquery.d.ts#e69fe60f2d6377ea4fae539493997b098f52cad1",
+    "lodash": "github:DefinitelyTyped/DefinitelyTyped/lodash/lodash.d.ts#e69fe60f2d6377ea4fae539493997b098f52cad1",
+    "meteor": "github:DefinitelyTyped/DefinitelyTyped/meteor/meteor.d.ts#e69fe60f2d6377ea4fae539493997b098f52cad1",
+    "toastr": "github:DefinitelyTyped/DefinitelyTyped/toastr/toastr.d.ts#a36e6ad2f472741b1c22c2af955bf13b7c62e146"
+  }
+}

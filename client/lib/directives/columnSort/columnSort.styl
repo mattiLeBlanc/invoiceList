@@ -1,0 +1,22 @@
+@import "../../../styles/imports.styl"
+
+dt [sortable-column]
+
+  .columnLabel
+    text-decoration             underline
+
+  .sort
+    display                     inline-block
+    margin-bottom               -5px
+    margin-left                 10px
+
+    .icon
+      svg-container( 20px, 20px, $color-charcoal-1  )
+      transition: 0.2s ease-in-out;
+
+  &[direction="ASC"]
+    .sort .icon
+      transform:rotateZ(180deg)
+  &[direction="DESC"]
+    .sort .icon
+      transform:rotateZ(0deg)

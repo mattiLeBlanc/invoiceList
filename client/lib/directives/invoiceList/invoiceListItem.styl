@@ -1,0 +1,45 @@
+@import "../../../styles/imports.styl"
+
+.invoice-list-item
+
+  .button.btn.btn-primary
+    margin-left                 30px
+    margin-right                30px
+  .open
+  .activated
+    .title
+      margin-bottom             10px
+      ellipsis()
+      color                     $color-charcoal-1
+      font-weight               $font-weight-regular
+      +retina()
+        font-weight             $font-weight-light
+      font-size                 1.125em
+
+    .subtitle
+      font-size                 0.875em
+      color                     $color-charcoal-5
+      font-weight               $font-weight-regular
+      +retina()
+        font-weight             $font-weight-light
+
+  .activated
+    .payments-left
+      .title
+        font-size               14px
+        margin-bottom           0
+
+      .progress-bar
+        height                  2px
+        margin                  8px 0
+        background-color        $color-charcoal-9
+
+        &:after
+          background-color      $color-green-4
+          width                 20%
+          height                2px
+          content               ''
+          display               block
+
+      .subtitle
+        font-size               12px

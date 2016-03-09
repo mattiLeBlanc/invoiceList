@@ -1,0 +1,53 @@
+@import "../../imports.styl"
+
+.pp-select
+  position              relative
+
+  button
+    height              $form-control-height
+    border-radius       5px
+    background-color    #fff
+    border-width        1px
+    border-style        solid
+    width               100%
+    text-align          left
+    padding-left        10px
+
+    &:focus
+      outline           none
+
+    .caret
+      float             right
+      margin-top        8px
+      border            none
+      background-image  url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMC8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9UUi8yMDAxL1JFQy1TVkctMjAwMTA5MDQvRFREL3N2ZzEwLmR0ZCI+PHN2ZyB2ZXJzaW9uPSIxLjAiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjkuNjAycHgiIGhlaWdodD0iNS45MjJweCIgdmlld0JveD0iMCAwIDkuNjAyIDUuOTIyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA5LjYwMiA1LjkyMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PHBhdGggZmlsbD0iI0IyQjJCMiIgZD0iTTguNDgsMGwtMy42OCwzLjY4TDEuMTIxLDBMMCwxLjEyMWw0LjgwMSw0LjgwMWw0LjgwMS00LjgwMUw4LjQ4LDB6IE04LjQ4LDAiLz48L2c+PC9zdmc+")
+      background-size   14px
+      vertical-align    initial
+      background-repeat no-repeat
+
+      width             16px
+      height            9px
+
+
+  .dropdown-menu
+    width               100%
+    padding             0
+
+    .active a
+      background-color  #f5f5f5
+      color             inherit
+      &:hover
+        background-color #f5f5f5
+
+    li
+      border-bottom     1px solid $well-border-color
+
+      a
+        height            $form-control-height
+        line-height       $form-control-height
+        padding           0 10px
+        border-radius     0 0 5px 5px
+
+
+      &:last-child
+        border-bottom     none

@@ -1,0 +1,91 @@
+@import "../imports.styl"
+
+// ============= MIXINS ================
+
+btn-disabled()
+  background-color        $color-charcoal-5
+  opacity                 1
+  &:hover
+    background-color        $color-charcoal-5
+    opacity                 1
+
+// ============= SELECTORS =============
+
+.btn
+  min-width                 170px
+  height                    44px
+
+  font-weight       $font-weight-regular
+  +retina()
+    font-weight       $font-weight-light
+
+  color                     #fff
+  border-radius             22px
+  padding-right             50px
+  padding-left              50px
+  font-size                 1em
+  position                  relative
+
+
+
+.btn-primary
+
+  background-color          $color-green-5
+  border                    none
+  transition                background-color .15s ease-in-out
+
+  &:hover
+  &:active
+  &:focus
+  &:active:focus
+    background-color        $color-green-6
+    transition              background-color .15s ease-in-out
+    outline                 none
+
+  &[disabled=disabled]
+  &.inactive
+    btn-disabled()
+
+    &:hover
+      btn-disabled()
+      ^[-2].inactive:hover
+        background-color        $color-charcoal-6
+        transition              background-color .15s ease-in-out
+
+
+.btn-outline
+  background-color          transparent
+  transition                background-color .15s ease-in-out
+  border-width              1px
+  border-style              solid
+  border-color              $color-charcoal-1
+  color                     $color-charcoal-1
+
+  &:hover
+    background-color        rgba(0,0,0,.1)
+    transition              background-color .15s ease-in-out
+
+  &:hover
+  &:active
+  &:focus
+  &:active:focus
+    outline                 none
+
+  &.inverse
+    border-color            $color-white
+    color                   $color-white
+
+.btn-image
+  background-color          transparent
+  border                    none
+  height                    initial
+  padding                   0
+
+  &:focus
+  &:active:focus
+    outline                 none
+    box-shadow              none
+  &:hover
+    opacity                 .9
+
+
