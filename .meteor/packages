@@ -1,0 +1,43 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-base             # Packages every Meteor app needs to have
+mobile-experience       # Packages for a great mobile UX
+mongo                   # The database Meteor supports right now
+# blaze-html-templates    # Compile .html files into Meteor Blaze views
+session                 # Client-side reactive dictionary for your app
+jquery                  # Helpful client-side library
+tracker                 # Meteor's client-side reactive programming library
+
+standard-minifiers      # JS/CSS minifiers run for production mode
+
+accounts-password
+accounts-base
+http
+
+angular
+angularui:angular-ui-router
+angular:angular-sanitize
+angular:angular-animate
+angular-meteor-auth
+
+
+
+stolinski:stylus-multi
+mquandalle:jade # adds jQuery
+civilframe:angular-jade
+momentjs:moment
+mgcrea:angular-strap
+pbastowski:typescript
+kyleking:customizable-bootstrap-stylus #adds jQuery
+mquandalle:bower
+stevezhu:lodash
+sgi:ui-mask
+aldeed:collection2
+johnantoni:meteor-normalize
+vishalm:angular-toastr
+reywood:publish-composite
+
