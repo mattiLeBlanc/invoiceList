@@ -12,7 +12,16 @@ class SortabletDirective implements angular.IDirective {
   // public scope         = {
   //   handler:  '&'
   // };
-  public scope = false;
+  // public scope = false;
+
+  public scope: any = true;
+  public bindToController:any = {
+    testColumn: '='
+  }
+  public controller = () => {
+  };
+  public controllerAs: 'ctrl';
+
   private localScope: any;
   private currentSortedColumn: any;
 
@@ -133,10 +142,15 @@ class SortabletDirective implements angular.IDirective {
     $el.attr( 'direction', direction );
     this.currentSortedColumn = target;
 
-    this.localScope.$parent.vm.updateSort( {
-      column: $el.attr( 'sort-by')
-    , direction: direction
-    } );
+
+    this.localScope.ctrl.testColumn = $el.attr( 'sort-by');
+
+    console.log( "Controller in Directive", this.localScope.ctrl);
+
+    // this.localScope.$parent.vm.updateSort( {
+    //   column: $el.attr( 'sort-by')
+    // , direction: direction
+    // } );
   }
 }
 

@@ -13,20 +13,22 @@ class DashboardController {
   };
   private sortColumns: any = {};
 
+  private testColumn: any;
+
 
   constructor( private $log: angular.ILogService, private $state: angular.ui.IStateService, private $modal: any, private $scope: any, private $reactive: any, private currentUser: any ) {
 
 
     $reactive( this ).attach( $scope );
 
-    console.log( 'currentUser', currentUser );
+    // console.log( 'currentUser', currentUser );
 
-    this.autorun( () => {
+    // this.autorun( () => {
 
-      // console.log( 'autorun Sort', this.getReactively( 'sortColumns' ) );
-      console.log( 'autorun', this.getReactively( 'search' ) );
+    //   // console.log( 'autorun Sort', this.getReactively( 'sortColumns' ) );
+    //   console.log( 'autorun', this.getReactively( 'search' ) );
 
-    });
+    // });
 
 
     this.subscribe( 'invoices', () => [ ],  {
@@ -55,6 +57,7 @@ class DashboardController {
         ,  invoices
         ,  invoiceIds
         ,  sort
+        ,  testColumn
         ,  currentState;
 
         selector = {};
@@ -63,7 +66,8 @@ class DashboardController {
         // this is purely to make sortColumns reactive
         //
         sort = this.getReactively( 'sortColumns', true );
-
+        testColumn = this.getReactively( 'testColumn' );
+        console.log( 'testColumn=', testColumn );
 
         return Invoices.find( selector, { sort: sort } );
       }
@@ -90,7 +94,9 @@ class DashboardController {
     catch(e){}
   }
 
-
+  whatIsTestColumn(): void {
+    console.log("Test column is", this.testColumn );
+  }
 
   setCurrentTab( state: string ): string {
 

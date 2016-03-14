@@ -10,8 +10,10 @@ div.dashboard-open-invoice
           use(xlink:href="/images/svg/sprite.svg#icon-search")
         input.form-control(type="text" name="search" placeholder="Search Invoice" ng-model="vm.search" )
 
+  div
+    button( ng-click="vm.whatIsTestColumn()") What is testcolumn?
   dl.pp-grid-list(layout="column")
-    dt(layout="row" layout-align="space-around center" sortable)
+    dt(layout="row" layout-align="space-around center" sortable test-column="vm.testColumn")
       div.text-left(flex="10" sort-by="Total" direction="asc") Amount
       div(flex="25" flex-offset="5" sort-by="LineItems.Description") Invoice
       div(flex="20" flex-offset="5" sort-by="Date") Issued Date
