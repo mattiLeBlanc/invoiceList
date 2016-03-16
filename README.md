@@ -72,14 +72,16 @@ Removing $digest is not an option right now, see issue 1.
 Unfortunately I still see the subscription stopping during Meteor Development rebuild with version 1.3.7.
 It seems to happen constantly after code update and Meteor reloads the browser (chrome). I really need to navigate to another state and back to get the subscription to work.
 
-***EDIT 8/2/2016 22:42 AEST.
+**EDIT 8/2/2016 22:42 AEST.**
+
 Event when the dashboard is loading the subscription, a hard reload will actually break the subscription now....Actually the subscriptions seems to stop more often than on version 1.3.6
 
 5) Helper reactive reRun returns empty collection for a instant and then normal collection
 
 This issue is still relevant. The template apparently gets an update before the helper is finished getting the full cursor. It happens when I do multiple sorts in a row and the helper is called a couple of times with every time a new Sort command
 
-*** ADDED 17/3/2016***
+** ADDED 17/3/2016**
+
 6) User's account state not updating in template through helper
 
 I have added a selectbox at the top of the page which will update the users account state in Mongo (user.profile.accountState). The current state is printed in the template ( {{vm.user.profile.accountState}} ). However, when you update the value to a new state (check chrome log console to see success), the user helper doesn't rerun even when the subscription DID renew (check Meteor.users.findOne().profile.accountState in your console).
