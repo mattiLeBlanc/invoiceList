@@ -78,3 +78,9 @@ Event when the dashboard is loading the subscription, a hard reload will actuall
 5) Helper reactive reRun returns empty collection for a instant and then normal collection
 
 This issue is still relevant. The template apparently gets an update before the helper is finished getting the full cursor. It happens when I do multiple sorts in a row and the helper is called a couple of times with every time a new Sort command
+
+*** ADDED 17/3/2016***
+6) User's account state not updating in template through helper
+
+I have added a selectbox at the top of the page which will update the users account state in Mongo (user.profile.accountState). The current state is printed in the template ( {{vm.user.profile.accountState}} ). However, when you update the value to a new state (check chrome log console to see success), the user helper doesn't rerun even when the subscription DID renew (check Meteor.users.findOne().profile.accountState in your console).
+I think the helper should rerun on changes in mongo, right?
