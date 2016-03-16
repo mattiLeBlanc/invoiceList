@@ -55,7 +55,8 @@ The $DIGEST is still necessary. Other wise the Helper will not reRun.
 
 Checking DeepWatch option now on getReactivitly().
 
-***EDIT 8/2/2016 22:40 AEST.
+**EDIT 8/2/2016 22:40 AEST**
+
 Setting DeepWatch to true does work partially ( don't have to reset the columnSort to {} every time), however without the $DIGEST it doesn't work. $digest call is required to make it work right now.
 That looks like a bug, right?
 
@@ -72,7 +73,7 @@ Removing $digest is not an option right now, see issue 1.
 Unfortunately I still see the subscription stopping during Meteor Development rebuild with version 1.3.7.
 It seems to happen constantly after code update and Meteor reloads the browser (chrome). I really need to navigate to another state and back to get the subscription to work.
 
-**EDIT 8/2/2016 22:42 AEST.**
+**EDIT 8/2/2016 22:42 AEST**
 
 Event when the dashboard is loading the subscription, a hard reload will actually break the subscription now....Actually the subscriptions seems to stop more often than on version 1.3.6
 
@@ -80,7 +81,7 @@ Event when the dashboard is loading the subscription, a hard reload will actuall
 
 This issue is still relevant. The template apparently gets an update before the helper is finished getting the full cursor. It happens when I do multiple sorts in a row and the helper is called a couple of times with every time a new Sort command
 
-** ADDED 17/3/2016**
+**ADDED 17/3/2016**
 
 6) User's account state not updating in template through helper
 
