@@ -7,6 +7,7 @@ class DashboardController {
 
   private type: string = 'open';
   private search: any;
+  private accountStateSelect: any;
   private invoiceFilter: any = {
 
     'AmountDue': { $gt: 0 }
@@ -71,6 +72,10 @@ class DashboardController {
 
         return Invoices.find( selector, { sort: sort } );
       }
+    ,
+      user: () => {
+        return Meteor.users.findOne();
+      }
     } );
   }
 
@@ -92,6 +97,16 @@ class DashboardController {
       this.$scope.$digest();
     }
     catch(e){}
+  }
+
+  setAccountState(): void {
+    console.log(this.accountStateSelect);
+    this.call( 'account.updateState', { state: this.accountStateSelect }, ( error, result ) => {
+      if ( error ) {
+        console.error( error );
+      }
+      console.log( 'account state updated to ', this.accountStateSelect );
+    } );
   }
 
   whatIsTestColumn(): void {

@@ -1,4 +1,10 @@
 div.dashboard(layout="column" flex="flex")
+  h3.text-center Current Profile State '{{ vm.user.profile.accountState }}'
+  div.text-center
+    select(ng-change="vm.setAccountState()" ng-model="vm.accountStateSelect")
+      option(value="disabled") Disabled
+      option(value="pending") Pending
+      option(value="untouchable") Untouchable
   div.pp-tab-header
     div.container
 

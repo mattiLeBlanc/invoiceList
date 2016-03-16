@@ -20,6 +20,7 @@ if ( Meteor.users.find().fetch().length === 0 ) {
   , profile: {
       'firstName': 'John'
     , 'lastName': 'Doe'
+    , 'accountState': 'active'
     }
   });
 }
