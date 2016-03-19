@@ -25,7 +25,7 @@
 
 Meteor.publish( 'invoices', function () {
 
-  filter         = {};
+  var filter         = {};
 
   return Invoices.find( filter, {
     fields: {

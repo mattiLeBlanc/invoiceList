@@ -23,6 +23,7 @@ angular.module( 'invoiceNow', [
   .filter( 'dateFormat', DateFormat )
   .directive( 'sortable', sortableFactory() )
   .directive( 'invoiceListItem', invoiceListItemFactory() )
+  .controller( 'ClearInvoiceController', ClearInvoiceController )
   // .service( 'apiService', ApiService )
 ;
 

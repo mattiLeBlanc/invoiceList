@@ -18,5 +18,5 @@ div.dashboard-open-invoice
       div(flex="15" sort-by="DueDate") Due Date
       div(flex="20")
 
-    invoice-list-item(data="invoice" type="vm.type" ng-repeat="invoice in vm.invoices")
+    invoice-list-item(data="invoice" type="vm.type" account-state="vm.accountState" ng-repeat="invoice in vm.invoices")
     dd(ng-show="!vm.invoices.length") There are no open invoices available

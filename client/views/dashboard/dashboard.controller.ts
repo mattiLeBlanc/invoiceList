@@ -8,6 +8,7 @@ class DashboardController {
   private type: string = 'open';
   private search: any;
   private accountStateSelect: any;
+  private accountState: string = 'creditApproved';
   private invoiceFilter: any = {
 
     'AmountDue': { $gt: 0 }

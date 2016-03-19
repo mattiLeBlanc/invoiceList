@@ -9,11 +9,11 @@ div.dashboard(layout="column" flex="flex")
     div.container
 
       ul.pp-tabs.nav.nav-tabs
-        li(ng-class="vm.setCurrentTab('private.dashboard.open')")
-          a(ui-sref="private.dashboard.open") Open invoices
+        li(ng-class="vm.setCurrentTab('dashboard.open')")
+          a(ui-sref="dashboard.open") Open invoices
           //- a(ui-sref="private.dashboard.open" ui-sref-opts="{reload:true}") Open invoices
-        li(ng-class="vm.setCurrentTab('private.dashboard.activated')")
-          a(ui-sref="private.dashboard.activated") Activated invoices
+        li(ng-class="vm.setCurrentTab('dashboard.activated')")
+          a(ui-sref="dashboard.activated") Activated invoices
           //- a(ui-sref="private.dashboard.activated" ui-sref-opts="{reload:true}") Activated invoices
 
   div.pp-tab-content(flex)

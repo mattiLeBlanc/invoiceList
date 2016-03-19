@@ -1,20 +1,36 @@
-dd.invoice-list-item()
+//- dd.invoice-list-item()
 
-  div.open(ng-show="type === 'open'" layout="row" layout-align="space-around start")
-    div.title.text-left(flex="10") {{ invoiceData.Total | currency: '$' : 0 }}
+//-   div.open(ng-show="type === 'open'" layout="row" layout-align="space-around start")
+//-     div.title.text-left(flex="10") {{ invoiceData.Total | currency: '$' : 0 }}
+
+//-     div(flex="25" flex-offset="5" layout="column")
+//-       div.title {{invoiceData.LineItems[0].Description}}
+//-       div.subtitle &#35;{{invoiceData.InvoiceNumber}}
+
+//-     div.title(flex="20" flex-offset="5") {{ invoiceData.Date | dateFormat }}
+
+//-     div(flex="35" layout="column")
+//-       div.title {{ invoiceData.DueDate | dateFormat }}
+//-       div.subtitle {{ vm.dateDifference }} days later
+
+
+dd.invoice-list-item
+  div.open(ng-show="invoiceItem.type === 'open'" layout="row" layout-align="space-around start")
+    div.title.text-left(flex="10") {{ invoiceItem.invoice.Total | currency: '$' : 0 }}
 
     div(flex="25" flex-offset="5" layout="column")
-      div.title {{invoiceData.LineItems[0].Description}}
-      div.subtitle &#35;{{invoiceData.InvoiceNumber}}
+      div.title {{invoiceItem.invoice.LineItems[0].Description}}
+      div.subtitle &#35;{{invoiceItem.invoice.InvoiceNumber}}
 
-    div.title(flex="20" flex-offset="5") {{ invoiceData.Date | dateFormat }}
+    div.title(flex="20" flex-offset="5") {{ invoiceItem.invoice.Date | dateFormat }}
 
-    div(flex="35" layout="column")
-      div.title {{ invoiceData.DueDate | dateFormat }}
-      div.subtitle {{ vm.dateDifference }} days later
+    div(flex="15" layout="column")
+      div.title {{ invoiceItem.invoice.DueDate | dateFormat }}
+      div.subtitle {{ invoiceItem.dateDifference }} days later
 
+    div.text-right(flex="20")
 
-
+      button.btn.btn-primary(ng-click="invoiceItem.handle()" ng-class="{'inactive': invoiceItem.inactive }") Clear this invoice
 
 
 

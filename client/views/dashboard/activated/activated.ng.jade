@@ -1,0 +1,20 @@
+div.dashboard-open-activated
+
+  div(layout="row" layout-align="space-between center")
+    h2 Activated Invoices
+    div.search
+      div.form-group.addon()
+        svg.icon(role="img" title="RoundedEmail")
+          use(xlink:href="/images/svg/sprite.svg#icon-search")
+        input.form-control(type="text" name="search" placeholder="Search Invoice" ng-model="vm.search1" )
+
+
+  dl.pp-grid-list(layout="column")
+    dt(layout="row" layout-align="space-around center")
+      div(flex="10") Left to pay
+      div(flex="50") Invoice
+      div(flex="20") Next payment
+      div(flex="20")
+
+    invoice-list-item(data="invoice" type="vm.type" ng-repeat="invoice in vm.invoices")
+    dd(ng-if="!vm.invoices.length") There are no actived invoices available

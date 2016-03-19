@@ -1,0 +1,135 @@
+.modal.clearInvoice(tabindex='-1', role='dialog', aria-hidden='true')
+  .modal-dialog
+    .modal-content
+      .modal-header()
+        button.close(type='button' aria-label='Close' ng-click='$hide()')
+          span(aria-hidden='true') ×
+        h4.modal-title Clear invoice &#35;{{invoiceModel.invoiceData.InvoiceNumber}}
+        div.sub-title from {{invoiceModel.invoiceData.Contact.Name}}
+      //- .modal-body(layout="column" layout-align="center center")
+      .modal-body
+
+        div.step1(ng-show="invoiceModel.isStep(1)")
+          div.grey-content
+            div.deal
+              div(layout="row" layout-align="center center")
+                div.box.credit(layout="column" layout-align="center center")
+                  div
+                    svg.icon(role="img" title="Incoming")
+                      use(xlink:href="/images/svg/sprite.svg#icon-incoming")
+                  div.font-16 You'll get
+                  div.amount {{ invoiceModel.offer.credit | currency: '$' : 0 }}
+                  div.font-14 in your bank account
+
+                div.arrow
+                  svg.icon(role="img" title="arrow")
+                    use(xlink:href="/images/svg/sprite.svg#icon-arrow")
+
+                div.box.debit(layout="column" layout-align="center center")
+                  div
+                    svg.icon(role="img" title="dollar")
+                      use(xlink:href="/images/svg/sprite.svg#icon-dollar-o")
+                  div.font-16 You pay
+                  div.amount {{ invoiceModel.offer.debit | currency: '$' : 0 }}
+                  div.font-14 including all clearing fees
+
+          div.offer-details
+            dl
+              dd(layout="row" layout-align="space-between center")
+                div Loan term:
+                div 3 months
+              dd(layout="row" layout-align="space-between center")
+                div Payment frequency:
+                div Weekly
+              dd(layout="row" layout-align="space-between center")
+                div Payment amount:
+                div {{ invoiceModel.offer.debit/12 | currency: '$' : 2 }}
+              dd(layout="row" layout-align="space-between center")
+                div Last payment date:
+                div {{ invoiceModel.offerDetails.lastPaymentDate | dateFormat }}
+
+
+
+        div.step4(ng-show="invoiceModel.isStep(4)")
+          div.content
+            h2 Term & Condition
+            div.terms
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nulla, quia, ad tenetur eius aspernatur. Adipisci, ullam laudantium nemo distinctio impedit blanditiis harum eius in amet consectetur minima! Excepturi, odio.
+
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nulla, quia, ad tenetur eius aspernatur. Adipisci, ullam laudantium nemo distinctio impedit blanditiis harum eius in amet consectetur minima! Excepturi, odio.
+
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nulla, quia, ad tenetur eius aspernatur. Adipisci, ullam laudantium nemo distinctio impedit blanditiis harum eius in amet consectetur minima! Excepturi, odio.
+
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nulla, quia, ad tenetur eius aspernatur. Adipisci, ullam laudantium nemo distinctio impedit blanditiis harum eius in amet consectetur minima! Excepturi, odio.
+
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nulla, quia, ad tenetur eius aspernatur. Adipisci, ullam laudantium nemo distinctio impedit blanditiis harum eius in amet consectetur minima! Excepturi, odio.
+
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nulla, quia, ad tenetur eius aspernatur. Adipisci, ullam laudantium nemo distinctio impedit blanditiis harum eius in amet consectetur minima! Excepturi, odio.
+
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nulla, quia, ad tenetur eius aspernatur. Adipisci, ullam laudantium nemo distinctio impedit blanditiis harum eius in amet consectetur minima! Excepturi, odio.
+
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nulla, quia, ad tenetur eius aspernatur. Adipisci, ullam laudantium nemo distinctio impedit blanditiis harum eius in amet consectetur minima! Excepturi, odio.
+
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nulla, quia, ad tenetur eius aspernatur. Adipisci, ullam laudantium nemo distinctio impedit blanditiis harum eius in amet consectetur minima! Excepturi, odio.
+
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nulla, quia, ad tenetur eius aspernatur. Adipisci, ullam laudantium nemo distinctio impedit blanditiis harum eius in amet consectetur minima! Excepturi, odio.
+
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nulla, quia, ad tenetur eius aspernatur. Adipisci, ullam laudantium nemo distinctio impedit blanditiis harum eius in amet consectetur minima! Excepturi, odio.
+
+        div.step5(ng-show="invoiceModel.isStep(5)")
+          div.content(layout="column" layout-align="center center")
+
+            div.processing(ng-show="invoiceModel.processingInvoice" )
+              div(layout="column" layout-align="center center")
+                div.spinner
+                  div.bounce1
+                  div.bounce2
+                  div.bounce3
+              h4 We are processing your invoice
+
+            div.success(ng-show="invoiceModel.success" )
+              div(layout="column" layout-align="center center")
+                svg.icon(role="img" title="bank")
+                  use(xlink:href="/images/svg/sprite.svg#icon-check")
+                h3 Success
+                div We have transferred&nbsp;
+                  strong {{ invoiceModel.offer.credit | currency: '$' : 0 }}
+                  | &nbsp;to your bank account!
+
+
+
+        //- button.btn.btn-primary(ui-sref="global.profile.information") Update your profile now
+
+      div(ng-show="invoiceModel.isStep(4)")
+
+        .modal-footer-row(layout="row" layout-align="space-between center")
+          form(novalidate name="frmAcceptTerms")
+            div.confirmation.form-checkbox(show-errors)
+              input(type="checkbox" id="confirm-terms" name="termsAccepted" ng-model="invoiceModel.loanTermsAccepted" required)
+              label(for="confirm-terms") I agree with all Prospa’s terms & conditions
+          div
+            button.btn.btn-primary( ng-click="invoiceModel.goToNextStep()") Pay me
+
+      div(ng-hide="invoiceModel.isStep(4)")
+        .modal-footer(layout="column" layout-align="center center")
+          div(ng-show="invoiceModel.isStep(5)")
+            button.btn.btn-primary( ng-click="invoiceModel.goToActive();$hide()" ng-disabled="invoiceModel.processingInvoice") Close
+
+          div(ng-hide="invoiceModel.isStep(5)")
+            button.btn.btn-primary( ng-click="invoiceModel.goToNextStep()")
+              span(ng-show="invoiceModel.isStep(1)") Continue
+              span(ng-show="invoiceModel.isStep(2)") Continue
+              span(ng-show="invoiceModel.isStep(3)") Continue
+              //- span(ng-show="invoiceModel.isStep(4)") I Agree
+              //- span(ng-show="invoiceModel.isStep(5)") Close
+
+          //- div(ng-show="invoiceModel.isStep(1)")
+        //-   button.btn.btn-primary( ng-click="invoiceModel.goToStep(2)") Pay me now
+        //- div(ng-show="invoiceModel.isStep(2)")
+        //-   button.btn.btn-primary( ng-click="invoiceModel.goToStep(3)") Continue
+        //- div(ng-show="invoiceModel.isStep(3)")
+        //-   button.btn.btn-primary( ng-click="invoiceModel.goToStep(3)") Continue
+        //- div(ng-show="invoiceModel.isStep(4)")
+        //-   button.btn.btn-primary( ng-click="invoiceModel.goToStep(3)") I agree
+
+

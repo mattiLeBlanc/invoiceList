@@ -43,6 +43,17 @@ function routerConfig( $stateProvider: angular.ui.IStateProvider, $urlRouterProv
       }
 
     })
+    .state('dashboard.activated',
+    {
+      url: '/activated'
+      , views:
+      {
+        'content@dashboard':
+        {
+          templateUrl: 'client/views/dashboard/activated/activated.html'
+        }
+      }
+    })
 
     .state('login',
     {
