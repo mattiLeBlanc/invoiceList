@@ -24,6 +24,7 @@ That is the extend of the scenario: triggering sorts which reloads the list etc.
 ## Issues ##
 
 1) Reactivity with an object: not autorunning after setting of new value
+------------------------------------------------------------------------
 
 This still seems to be an issue, unless I am not using it correctly.
 
@@ -60,30 +61,42 @@ Checking DeepWatch option now on getReactivitly().
 Setting DeepWatch to true does work partially ( don't have to reset the columnSort to {} every time), however without the $DIGEST it doesn't work. $digest call is required to make it work right now.
 That looks like a bug, right?
 
-2) Updating controller variable directly from directive not triggering reactive update
+**EDIT 4/4/2016 17:30 AEST**
+This issue is still occurring. When I commit the $digest command in the dashboard controller, the helper will not be rerun. So there seems to be a reactivity issue when I update the variable from a directive. The variable IS updated, but the reactive watch doesn't pick it up.
 
-Not a bug IMO, because directive makes copy of variable and that copy is not being watched. Using the controller function to update the variable being watched makes sense.
+2) Updating controller variable directly from directive not triggering reactive update
+------------------------------------------------------------------------
+
+~~Not a bug IMO, because directive makes copy of variable and that copy is not being watched. Using the controller function to update the variable being watched makes sense.~~
+**Irrelevant**
 
 3) Running in a $digest error
+-----------------------------
 
 Removing $digest is not an option right now, see issue 1.
 
 4) Subscription stop issue
+--------------------------
 
-Unfortunately I still see the subscription stopping during Meteor Development rebuild with version 1.3.7.
-It seems to happen constantly after code update and Meteor reloads the browser (chrome). I really need to navigate to another state and back to get the subscription to work.
+~~`Unfortunately I still see the subscription stopping during Meteor Development rebuild with version 1.3.7.
+It seems to happen constantly after code update and Meteor reloads the browser (chrome). I really need to navigate to another state and back to get the subscription to work.~~
 
 **EDIT 8/2/2016 22:42 AEST**
 
-Event when the dashboard is loading the subscription, a hard reload will actually break the subscription now....Actually the subscriptions seems to stop more often than on version 1.3.6
+~~Event when the dashboard is loading the subscription, a hard reload will actually break the subscription now....Actually the subscriptions seems to stop more often than on version 1.3.6~~
+
+**Resolved with Angular Meteor 1.3.9_2**
 
 5) Helper reactive reRun returns empty collection for a instant and then normal collection
+------------------------------------------------------------------------
 
-This issue is still relevant. The template apparently gets an update before the helper is finished getting the full cursor. It happens when I do multiple sorts in a row and the helper is called a couple of times with every time a new Sort command
+~~This issue is still relevant. The template apparently gets an update before the helper is finished getting the full cursor. It happens when I do multiple sorts in a row and the helper is called a couple of times with every time a new Sort command~~
 
 **ADDED 17/3/2016**
+**Resolved with Angular Meteor 1.3.9_2**
 
 6) User's account state not updating in template through helper
+---------------------------------------------------------------
 
-I have added a selectbox at the top of the page which will update the users account state in Mongo (user.profile.accountState). The current state is printed in the template ( {{vm.user.profile.accountState}} ). However, when you update the value to a new state (check chrome log console to see success), the user helper doesn't rerun even when the subscription DID renew (check Meteor.users.findOne().profile.accountState in your console).
-I think the helper should rerun on changes in mongo, right?
+~~I have added a selectbox at the top of the page which will update the users account state in Mongo (user.profile.accountState). The current state is printed in the template ( {{vm.user.profile.accountState}} ). However, when you update the value to a new state (check chrome log console to see success), the user helper doesn't rerun even when the subscription DID renew (check Meteor.users.findOne().profile.accountState in your console).
+I think the helper should rerun on changes in mongo, right?~~

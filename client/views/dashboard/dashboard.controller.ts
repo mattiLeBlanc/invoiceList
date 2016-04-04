@@ -1,4 +1,6 @@
-class DashboardController {
+import { Invoices } from '/imports/collections/invoices'
+
+export class DashboardController {
 
 
   static $inject = [ '$log', '$state',  '$modal', '$scope' , '$reactive', 'currentUser' ];
@@ -132,4 +134,4 @@ class DashboardController {
 
 }
 
-this.DashboardController = DashboardController;
+// this.DashboardController = DashboardController;

@@ -12,17 +12,16 @@ session                 # Client-side reactive dictionary for your app
 jquery                  # Helpful client-side library
 tracker                 # Meteor's client-side reactive programming library
 
-standard-minifiers      # JS/CSS minifiers run for production mode
 
 accounts-password
 accounts-base
 http
 
-angular
+angular@1.3.9_2
 angularui:angular-ui-router
 angular:angular-sanitize
 angular:angular-animate
-angular-meteor-auth
+angular-meteor-auth@1.0.1
 
 
 
@@ -31,9 +30,10 @@ mquandalle:jade # adds jQuery
 civilframe:angular-jade
 momentjs:moment
 mgcrea:angular-strap
-pbastowski:typescript
+pbastowski:typescript@1.3.0
+# barbatus:typescript
 kyleking:customizable-bootstrap-stylus #adds jQuery
-mquandalle:bower
+
 stevezhu:lodash
 sgi:ui-mask
 aldeed:collection2
@@ -41,3 +41,5 @@ johnantoni:meteor-normalize
 vishalm:angular-toastr
 reywood:publish-composite
 
+standard-minifier-css
+standard-minifier-js

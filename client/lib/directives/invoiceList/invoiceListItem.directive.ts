@@ -134,9 +134,8 @@ class InvoiceListItemDirective implements angular.IDirective {
   };
 }
 
-function invoiceListItemFactory(): angular.IDirectiveFactory {
+export function invoiceListItemFactory(): angular.IDirectiveFactory {
 
   var directive = () => new InvoiceListItemDirective();
   return directive;
 }
-this.invoiceListItemFactory = invoiceListItemFactory;

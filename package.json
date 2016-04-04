@@ -1,0 +1,19 @@
+{
+  "name": "invoicelisttest",
+  "version": "0.5.0",
+  "description": "test",
+  "main": "app.ts",
+  "dependencies": {
+    "angular-ui-router-anim-in-out": "^1.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattiLeBlanc/invoiceList.git"
+  },
+  "author": "Mattijs Spierings",
+  "license": "ISC"
+}

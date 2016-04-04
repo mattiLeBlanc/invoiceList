@@ -1,5 +1,5 @@
 
-class ClearInvoiceController {
+export class ClearInvoiceController {
 
   static $inject = [ '$log', '$state', '$scope',  '$reactive', '$auth', 'invoiceData', '$timeout' ];
 
@@ -95,4 +95,3 @@ class ClearInvoiceController {
   }
 
 }
-this.ClearInvoiceController = ClearInvoiceController;

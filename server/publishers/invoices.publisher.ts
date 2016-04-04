@@ -1,3 +1,5 @@
+import { Invoices } from '/imports/collections/invoices'
+
 // IMPORTANT NOT TO USE FAT ARROW DUE TO LOSS OF THIS SCOPE. this.userId will become undefined
 //
 

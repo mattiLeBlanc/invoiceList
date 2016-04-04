@@ -1,1 +1,0 @@
-ActivatedInvoices = new Mongo.Collection( 'activatedInvoices' );

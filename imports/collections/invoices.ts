@@ -1,4 +1,5 @@
-Invoices = new Mongo.Collection('invoices');
+import { Mongo } from 'meteor/mongo';
+export var Invoices = new Mongo.Collection('invoices');
 // schema = new SimpleSchema(
 //     userId:
 //         type:   String
@@ -26,4 +27,4 @@ Invoices = new Mongo.Collection('invoices');
 //         type:   Date
 //         label:  'Creation date'
 // )
-// Invoices.attachSchema( schema ) 
+// Invoices.attachSchema( schema )

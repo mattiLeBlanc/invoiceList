@@ -1,4 +1,4 @@
-function routerConfig( $stateProvider: angular.ui.IStateProvider, $urlRouterProvider: angular.ui.IUrlRouterProvider, $locationProvider: angular.ILocationProvider, $uiViewScrollProvider: angular.ui.IUiViewScrollProvider )
+export function routerConfig( $stateProvider: angular.ui.IStateProvider, $urlRouterProvider: angular.ui.IUrlRouterProvider, $locationProvider: angular.ILocationProvider, $uiViewScrollProvider: angular.ui.IUiViewScrollProvider )
 {
 
   // static $inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider', '$uiViewScrollProvider' ];
@@ -68,7 +68,7 @@ function routerConfig( $stateProvider: angular.ui.IStateProvider, $urlRouterProv
         }
       }
      , resolve: {
-       currentUser: () => {return null };
+       currentUser: () => {return null; }
      }
     })
 
@@ -78,4 +78,3 @@ function routerConfig( $stateProvider: angular.ui.IStateProvider, $urlRouterProv
 
 }
 routerConfig.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider', '$uiViewScrollProvider' ];
-this.routerConfig = routerConfig;

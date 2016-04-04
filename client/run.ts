@@ -1,4 +1,4 @@
-function runBlock( $rootScope: angular.meteor.IRootScopeService, $log: angular.ILogService, $window: angular.IWindowService, $state: angular.ui.IState )
+export function runBlock( $rootScope: angular.meteor.IRootScopeService, $log: angular.ILogService, $window: angular.IWindowService, $state: angular.ui.IState )
 {
 
 
@@ -14,4 +14,3 @@ function runBlock( $rootScope: angular.meteor.IRootScopeService, $log: angular.I
   $log.debug('runBlock end');
 }
 runBlock.$inject = [ '$rootScope', '$log', '$window', '$state' ];
-this.runBlock = runBlock;

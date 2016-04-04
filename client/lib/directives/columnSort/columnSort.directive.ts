@@ -140,7 +140,7 @@ class SortabletDirective implements angular.IDirective {
   }
 }
 
-function sortableFactory() : angular.IDirectiveFactory {
+export function sortableFactory() : angular.IDirectiveFactory {
 
   var directive = ( $templateRequest: any ) => new SortabletDirective( $templateRequest );
 
@@ -148,4 +148,3 @@ function sortableFactory() : angular.IDirectiveFactory {
   return directive;
 }
 
-this.sortableFactory = sortableFactory;

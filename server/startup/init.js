@@ -1,3 +1,5 @@
+import { Invoices } from '/imports/collections/invoices';
+
 if ( Invoices.find({}).fetch().length === 0 ) {
 
   var file, data;

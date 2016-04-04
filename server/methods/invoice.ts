@@ -1,3 +1,6 @@
+import { Invoices } from '/imports/collections/invoices';
+import { ActivatedInvoices } from '/imports/collections/activatedInvoices';
+
 Meteor.scopedMethods( 'invoice', {
 
   credit: ( params: any ): any => {

@@ -1,4 +1,4 @@
-function DateFormat(): angular.IFilterService {
+export function DateFormat(): angular.IFilterService {
 
     return ( value: string ) => {
 
@@ -20,5 +20,4 @@ function DateFormat(): angular.IFilterService {
     };
 
 }
-this.DateFormat = DateFormat;
 
